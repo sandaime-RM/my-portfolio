@@ -16,6 +16,9 @@ date: "2025-03-01"
 - **チーム分け機能**: チーム戦モードあり
 
 ## 🛠️ 技術スタック
-- **フロントエンド**: React Native
-- **バックエンド**: Firebase Firestore
+- **フロントエンド**: React
+- **バックエンド**: Firebase (Realtime Database / Cloud Functions / etc.)
 - **位置情報処理**: Google Maps API
+- **オンライン決済**: Square API
+  
+[電鬼２ アプリ](https://traffic-tag-game.web.app)
