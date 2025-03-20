@@ -3,6 +3,7 @@
 import { motion } from "framer-motion";
 import Header from "@/components/Header"; // 追加
 import Footer from "@/components/Footer";
+import skills from "@/data/skills/skills.json"; // 追加
 
 export default function About() {
   return (
@@ -48,26 +49,14 @@ export default function About() {
       <section className="mt-12 max-w-3xl mx-auto mb-12">
         <h2 className="text-2xl font-bold text-center text-gray-800">Skills & Certifications</h2>
         <div className="mt-4 grid grid-cols-1 md:grid-cols-3 gap-4">
-          <div className="bg-slate-50 p-4 rounded-lg border border-gray-200">
-            <h3 className="font-bold text-blue-600">フロントエンド開発</h3>
-            <p className="text-gray-700 text-sm">React / Next.js / Tailwind CSS</p>
-          </div>
-          <div className="bg-slate-50 p-4 rounded-lg border border-gray-200">
-            <h3 className="font-bold text-blue-600">Web & アプリ開発</h3>
-            <p className="text-gray-700 text-sm">フルスタック開発の経験あり</p>
-          </div>
-          <div className="bg-slate-50 p-4 rounded-lg border border-gray-200">
-            <h3 className="font-bold text-blue-600">イベント企画・運営</h3>
-            <p className="text-gray-700 text-sm">大規模イベントの運営経験あり</p>
-          </div>
-          <div className="bg-slate-50 p-4 rounded-lg border border-gray-200">
-            <h3 className="font-bold text-blue-600">光通信研究</h3>
-            <p className="text-gray-700 text-sm">アナログ光ファイバ無線（A-RoF）</p>
-          </div>
-          <div className="bg-slate-50 p-4 rounded-lg border border-gray-200">
-            <h3 className="font-bold text-blue-600">簿記3級（勉強中）</h3>
-            <p className="text-gray-700 text-sm">経理・会計の基礎を学習中</p>
-          </div>
+          {
+            skills.map((skill, index) => (
+              <div key={skill.index} className="bg-slate-50 p-4 rounded-lg border border-gray-200">
+                <h3 className="font-bold text-blue-600">{skill.name}</h3>
+                <p className="text-gray-700 text-sm">{skill.detail}</p>
+              </div>
+            ))
+          }
         </div>
       </section>
 

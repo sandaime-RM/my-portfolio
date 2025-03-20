@@ -1,0 +1,24 @@
+[
+    {
+        "id": "currency",
+        "title": "仮想通貨RunRun取引アプリ",
+        "description": "Fitbitのデータを使った仮想通貨取引のシミュレーションアプリ",
+        "image": "/currency-thumbnail.png",
+        "link": "/works/currency"
+    },
+    {
+        "id": "denki2",
+        "title": "電鬼2",
+        "description": "大規模鬼ごっこ運営用Webアプリ",
+        "image": "/denki2-thumbnail.png",
+        "link": "/works/denki2"
+    },
+    {
+        "id": "memoryGame",
+        "title": "記憶力ゲーム",
+        "description": "Reactで作成した記憶力ゲーム",
+        "image": "/memoryGame-thumbnail.jpg",
+        "link": "/works/memoryGame"
+    }
+]
+  

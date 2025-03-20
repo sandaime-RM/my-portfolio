@@ -1,0 +1,26 @@
+[
+    {
+        "name": "Web開発",
+        "detail": "HTML, CSS, JavaScript, React, Node.js, Tailwind CSS"
+    },
+    {
+        "name": "クラウドサービスの活用",
+        "detail": "Google Cloud, Firebase, Square"
+    },
+    {
+        "name": "開発ツール",
+        "detail": "Git, GitHub, VSCode, Figma"
+    },
+    {
+        "name": "英語資格",
+        "detail": "TOEIC 830点, 英検準1級"
+    },
+    {
+        "name": "IT資格",
+        "detail": "基本情報技術者試験 合格"
+    },
+    {
+        "name": "その他資格",
+        "detail": "普通自動車第一種運転免許, タイ語検定5級, 簿記3級"
+    }
+]

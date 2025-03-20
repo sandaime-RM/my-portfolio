@@ -28,7 +28,7 @@ export default function Works() {
 
       <div className="max-w-4xl mx-auto text-center pt-24">
         <h1 className="text-3xl font-bold text-blue-600">My Works</h1>
-        <p className="text-lg text-gray-600 mt-4">開発したプロジェクトやイベント運営の実績を紹介します。</p>
+        <p className="text-lg text-gray-600 mt-4">開発した作品や活動実績を紹介します。</p>
       </div>
 
       {/* 制作物一覧を動的に表示 */}

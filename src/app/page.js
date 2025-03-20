@@ -4,6 +4,7 @@ import Header from "@/components/Header";
 import { motion } from "framer-motion";
 import Link from "next/link";
 import Footer from "@/components/Footer";
+import recentWorks from "@/data/recentWorks.json";
 
 
 export default function Home() {
@@ -31,9 +32,18 @@ export default function Home() {
         <h3 className="text-3xl font-bold text-center">最近の実績</h3>
         <div className="mt-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {/* 作品のプレースホルダー */}
-          <div className="bg-gray-200 h-40 flex items-center justify-center">Work 1</div>
-          <div className="bg-gray-200 h-40 flex items-center justify-center">Work 2</div>
-          <div className="bg-gray-200 h-40 flex items-center justify-center">Work 3</div>
+          {
+            recentWorks.map((work) => (
+              <div key={work.id} className="bg-slate-50 border border-gray-200 p-6 rounded-lg hover:shadow-lg transition">
+                <img src={work.image} alt={work.title} className="w-full h-40 object-cover rounded-md" />
+                <h3 className="text-xl font-bold text-blue-600 mt-4">{work.title}</h3>
+                <p className="text-gray-700 mt-2">{work.description}</p>
+                <Link href={`/works/${work.id}`} className="text-blue-600 mt-4 inline-block hover:underline">
+                  詳細を見る →
+                </Link>
+              </div>
+            ))
+          }
         </div>
         <div className="text-center mt-6">
           <Link href="/works" className="text-blue-600 hover:underline">もっと見る</Link>

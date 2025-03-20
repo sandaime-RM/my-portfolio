@@ -24,3 +24,159 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+.markdown {
+  color: #1f2937; /* text-gray-900 */
+  line-height: 1.5; /* leading-normal */
+  word-break: break-word; /* break-words */
+}
+
+.markdown > * + * {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+.markdown li + li {
+  margin-top: 0.25rem;
+}
+
+.markdown li > p + p {
+  margin-top: 1.5rem;
+}
+
+.markdown strong {
+  font-weight: 600; /* font-semibold */
+}
+
+.markdown a {
+  color: #2563eb; /* text-blue-600 */
+  font-weight: 600; /* font-semibold */
+  text-decoration: none;
+}
+
+.markdown strong a {
+  font-weight: 700; /* font-bold */
+}
+
+.markdown h1 {
+  line-height: 1.25; /* leading-tight */
+  border-bottom: 1px solid #e5e7eb; /* border-b */
+  font-size: 2.25rem; /* text-4xl */
+  font-weight: 600; /* font-semibold */
+  margin-bottom: 1rem;
+  margin-top: 1.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.markdown h2 {
+  line-height: 1.25;
+  border-bottom: 1px solid #e5e7eb;
+  font-size: 1.5rem; /* text-2xl */
+  font-weight: 600;
+  margin-bottom: 1rem;
+  margin-top: 1.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.markdown h3 {
+  line-height: 1.375; /* leading-snug */
+  font-size: 1.125rem; /* text-lg */
+  font-weight: 600;
+  margin-bottom: 1rem;
+  margin-top: 1.5rem;
+}
+
+.markdown h4 {
+  line-height: 1;
+  font-size: 1rem; /* text-base */
+  font-weight: 600;
+  margin-bottom: 1rem;
+  margin-top: 1.5rem;
+}
+
+.markdown h5 {
+  line-height: 1.25;
+  font-size: 0.875rem; /* text-sm */
+  font-weight: 600;
+  margin-bottom: 1rem;
+  margin-top: 1.5rem;
+}
+
+.markdown h6 {
+  line-height: 1.25;
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: #4b5563; /* text-gray-600 */
+  margin-bottom: 1rem;
+  margin-top: 1.5rem;
+}
+
+.markdown blockquote {
+  font-size: 1rem;
+  border-left: 4px solid #d1d5db; /* border-gray-300 */
+  padding-left: 1rem;
+  padding-right: 1rem;
+  color: #4b5563; /* text-gray-600 */
+}
+
+.markdown code {
+  font-family: monospace;
+  font-size: 0.875rem;
+  display: inline;
+  background-color: #e5e7eb; /* bg-gray-200 */
+  border-radius: 0.25rem;
+  padding: 0.25rem 0.5rem;
+}
+
+.markdown pre {
+  background-color: #f3f4f6; /* bg-gray-100 */
+  border-radius: 0.25rem;
+  padding: 1rem;
+}
+
+.markdown pre code {
+  display: block;
+  background-color: transparent;
+  padding: 0;
+  overflow: visible;
+  border-radius: 0;
+}
+
+.markdown ul {
+  font-size: 1rem;
+  padding-left: 2rem;
+  list-style-type: disc;
+}
+
+.markdown ol {
+  font-size: 1rem;
+  padding-left: 2rem;
+  list-style-type: decimal;
+}
+
+.markdown kbd {
+  font-size: 0.75rem;
+  display: inline-block;
+  border-radius: 0.25rem;
+  border: 1px solid #d1d5db;
+  padding: 0.25rem 0.5rem;
+  text-align: center;
+  font-family: monospace;
+  font-weight: normal;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+}
+
+.markdown table {
+  font-size: 1rem;
+  border-collapse: collapse;
+  border-color: #4b5563; /* border-gray-600 */
+}
+
+.markdown th, .markdown td {
+  border: 1px solid #d1d5db;
+  padding: 0.25rem 0.75rem;
+}
+
+.markdown .highlight pre {
+  background-color: #f3f4f6 !important; /* Override pygments style background color */
+}
