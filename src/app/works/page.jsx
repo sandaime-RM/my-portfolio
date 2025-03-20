@@ -32,7 +32,7 @@ export default function Works() {
       </div>
 
       {/* 制作物一覧を動的に表示 */}
-      <section className="mt-12 max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
+      <section className="mt-12 max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12 px-4">
         {works.map((work) => (
           <div key={work.id} className="bg-slate-50 border border-gray-200 p-6 rounded-lg hover:shadow-lg transition">
             <img src={work.image} alt={work.title} className="w-full h-40 object-cover rounded-md" />

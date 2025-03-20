@@ -51,7 +51,7 @@ export default function About() {
         <div className="mt-4 grid grid-cols-1 md:grid-cols-3 gap-4">
           {
             skills.map((skill, index) => (
-              <div key={skill.index} className="bg-slate-50 p-4 rounded-lg border border-gray-200">
+              <div key={index} className="bg-slate-50 p-4 rounded-lg border border-gray-200">
                 <h3 className="font-bold text-blue-600">{skill.name}</h3>
                 <p className="text-gray-700 text-sm">{skill.detail}</p>
               </div>

@@ -16,9 +16,8 @@
     {
         "id": "memoryGame",
         "title": "記憶力ゲーム",
-        "description": "Reactで作成した記憶力ゲーム",
+        "description": "Arduinoで作成した記憶力ゲーム",
         "image": "/memoryGame-thumbnail.jpg",
         "link": "/works/memoryGame"
     }
 ]
-  

@@ -1,7 +1,7 @@
 ---
 id: "denki2"
 title: "電鬼2 - 鬼ごっこ用アプリ"
-description: "電車を活用した鬼ごっこイベントのための専用アプリ。リアルタイムの位置情報管理機能を搭載。"
+description: "大規模鬼ごっこイベントの運営用Webアプリ。ゲームに必要な機能をまとめて提供。"
 image: "/denki2-thumbnail.png"
 date: "2025-03-01"
 ---
